@@ -1,0 +1,13 @@
+#!/bin/bash
+no=121;
+while [ $no -ge 0 ]
+do
+ rev=`expr rev * 10 + $no % 10`
+ $no=`expr l$no / 10`
+done
+if [ $no -eq $rev ]
+then
+echo "$no is palindrome"
+else
+echo "$no is not palindrome"
+fi
