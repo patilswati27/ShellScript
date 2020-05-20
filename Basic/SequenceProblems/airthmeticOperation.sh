@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 read -p "Enter three numbers " a b c
 x=$(($a+$b*$c))
 echo "$x"
@@ -7,6 +7,4 @@ echo "$y"
 Z=$(($a % $b + $c))
 echo "$Z"
 v=$(($a *$b + $c))
-if[ $x -le $y -a $Z -le $v]x
-max=$Y
-echo "$max"
+

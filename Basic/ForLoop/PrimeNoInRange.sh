@@ -7,8 +7,9 @@ do
       do
          if[$i%j=0]
          then
-         count='expr $count+1'
+         ((count++))
          fi
+done
 done
 if[$Count=2]
 then
