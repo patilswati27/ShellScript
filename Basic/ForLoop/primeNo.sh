@@ -1,9 +1,9 @@
 #!/bin/bash -x
 Count=0
-read -p "Enter no to check its prime or not " No
-for((i=0;i<$No;i++))
+read -p "Enter no to check its prime or not " Number
+for((i=0;i<$Number;i++))
 do
-	if[`expr $No % $i` -eq 0]
+	if[`expr $Number % $i` -eq 0]
 	then
 	{{Count++}}
         fi
